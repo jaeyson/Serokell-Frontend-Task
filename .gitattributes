@@ -1,0 +1,15 @@
+*             text=auto eol=lf
+*.css         text diff=css
+*.html        text diff=html
+*.*ignore     text eol=lf
+*.js          text eol=lf
+*.map         text -diff
+*.md          text eol=lf
+*.scss        text diff=css
+*.*rc         text eol=lf
+
+## CONFIGS
+.editorconfig     text eol=lf
+.gitattributes    text eol=lf
+package.json      text eol=lf
+package-lock.json text -diff
