@@ -1,0 +1,82 @@
+*, *::before, *::after {
+  font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+:root {
+  --mainBg: salmon;
+}
+
+body {
+  background: salmon;
+  background: var(--mainBg);
+  color: moccasin;
+}
+body .container {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .container h1 {
+  text-align: center;
+}
+
+.fontweight-medium {
+  font-weight: 400;
+}
+
+.fontweight-large {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map*/

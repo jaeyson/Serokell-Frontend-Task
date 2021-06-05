@@ -1,0 +1,35 @@
+{
+  "name": "Serokell-Frontend-Task",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Frontend offline test",
+  "scripts": {
+    "start": "$(npm bin)/webpack serve --open",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "build:prod": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaeyson/Serokell-Frontend-Task.git"
+  },
+  "keywords": [],
+  "author": "Jaeyson Anthony Y.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaeyson/Serokell-Frontend-Task/issues"
+  },
+  "homepage": "https://github.com/jaeyson/Serokell-Frontend-Task#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^1.6.0",
+    "postcss": "^8.3.0",
+    "postcss-loader": "^5.3.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.34.0",
+    "sass-loader": "^11.1.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
