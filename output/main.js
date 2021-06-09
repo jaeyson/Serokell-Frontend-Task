@@ -2,6 +2,78 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/border.scss":
+/*!*************************!*\
+  !*** ./src/border.scss ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/breakpoints.scss":
+/*!******************************!*\
+  !*** ./src/breakpoints.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/color.scss":
+/*!************************!*\
+  !*** ./src/color.scss ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/components.scss":
+/*!*****************************!*\
+  !*** ./src/components.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/layout.scss":
+/*!*************************!*\
+  !*** ./src/layout.scss ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/position.scss":
+/*!***************************!*\
+  !*** ./src/position.scss ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./src/reset.scss":
 /*!************************!*\
   !*** ./src/reset.scss ***!
@@ -14,9 +86,33 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/style.scss":
+/***/ "./src/spacing.scss":
+/*!**************************!*\
+  !*** ./src/spacing.scss ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/typography.scss":
+/*!*****************************!*\
+  !*** ./src/typography.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/width.scss":
 /*!************************!*\
-  !*** ./src/style.scss ***!
+  !*** ./src/width.scss ***!
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -72,14 +168,82 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _reset_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reset.scss */ "./src/reset.scss");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
+/* harmony import */ var _border_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./border.scss */ "./src/border.scss");
+/* harmony import */ var _breakpoints_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./breakpoints.scss */ "./src/breakpoints.scss");
+/* harmony import */ var _color_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./color.scss */ "./src/color.scss");
+/* harmony import */ var _components_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components.scss */ "./src/components.scss");
+/* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layout.scss */ "./src/layout.scss");
+/* harmony import */ var _position_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./position.scss */ "./src/position.scss");
+/* harmony import */ var _reset_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./reset.scss */ "./src/reset.scss");
+/* harmony import */ var _spacing_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./spacing.scss */ "./src/spacing.scss");
+/* harmony import */ var _typography_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./typography.scss */ "./src/typography.scss");
+/* harmony import */ var _width_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./width.scss */ "./src/width.scss");
 
 
 
-const headline = 'Serokell Frontend Offline Test';
 
-document.querySelector('h1').innerText = headline;
+
+
+
+
+
+
+
+const $ = x => document.querySelector(x);
+
+const ready = (fn) => {
+  if (document.readyState != 'loading') {
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+};
+
+ready(() => {
+  window.addEventListener('scroll', () => {
+    const header = $('header').style;
+    const scrolledHeight = $('html').scrollTop;
+
+    if (scrolledHeight > 100) {
+      header.background = '#000000';
+    } else {
+      header.background = 'transparent';
+    }
+  });
+
+  const toggleMobileButton = () => {
+    $('.nav-mobile').classList.toggle('flex');
+    $('.close').classList.toggle('hidden');
+    $('.toggle').classList.toggle('hidden');
+  };
+
+  ['.toggle', '.close'].forEach(el => {
+    $(el).addEventListener('click', () => {
+      return toggleMobileButton();
+    });
+  });
+
+  document.querySelectorAll('.nav-mobile-link').forEach(el => {
+    el.addEventListener('click', () => {
+      return toggleMobileButton();
+    });
+  });
+
+  $('form.form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    let data = {
+      "Name":    $('#name').value,
+      "Email":   $('#email').value,
+      "Message": $('#message').value,
+    };
+
+    console.table(data);
+    $('form.form').reset();
+  });
+
+});
+
 })();
 
 /******/ })()

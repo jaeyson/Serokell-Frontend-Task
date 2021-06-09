@@ -1,14 +1,15 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  target: 'web',
   mode: 'development',
-  plugins: [new MiniCssExtractPlugin()],
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'output'),
   },
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
@@ -25,8 +26,10 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: path.resolve(''),
-    compress: true,
     port: 7000,
+    open: true,
+    hot: true,
+    watchContentBase: true,
+    contentBase: path.resolve(__dirname, 'output'),
   }
 };

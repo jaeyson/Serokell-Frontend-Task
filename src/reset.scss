@@ -2,9 +2,15 @@
   &,
   &::before,
   &::after {
-    font-family: 'Poppins', sans-serif;
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 html,
@@ -32,7 +38,11 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -45,8 +55,18 @@ select {
   margin: 0;
 }
 
-body {
-  box-sizing: border-box;
+button {
+  border: none;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 img,
