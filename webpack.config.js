@@ -7,7 +7,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'output'),
+    path: path.resolve(__dirname, 'docs'),
   },
   plugins: [new MiniCssExtractPlugin()],
   module: {
@@ -30,6 +30,6 @@ module.exports = {
     open: true,
     hot: true,
     watchContentBase: true,
-    contentBase: path.resolve(__dirname, 'output'),
+    contentBase: path.resolve(__dirname, 'docs'),
   }
 };

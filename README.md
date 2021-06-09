@@ -9,7 +9,7 @@
 
 ```
 root_dir/
-├── output/
+├── docs/
 │   ├── index.html
 │   ├── main.js
 │   └── main.css
