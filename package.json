@@ -4,7 +4,7 @@
   "private": true,
   "description": "Frontend offline test",
   "scripts": {
-    "start": "$(npm bin)/webpack serve --open",
+    "start": "webpack serve",
     "build": "webpack",
     "build:watch": "webpack --watch",
     "build:prod": "webpack --mode=production"

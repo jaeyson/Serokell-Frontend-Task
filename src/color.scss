@@ -1,0 +1,54 @@
+:root {
+  --white: #ffffff;
+  --gray-300: #D1D5DB;
+  --gray-500: #6B7280;
+  --gray-700: #374151;
+  --gray-900: #111827;
+
+  --purple-300: #C4B5FD;
+  --purple-500: #8B5CF6;
+  --purple-700: #6D28D9;
+
+  --indigo-300: #A5B4FC;
+  --indigo-500: #6366F1;
+  --indigo-700: #4338CA;
+
+  --tw-border-opacity: 1;
+}
+
+.text--white      {color: var(--white);}
+
+.text--gray-300   {color: var(--gray-300);}
+.text--gray-500   {color: var(--gray-500);}
+.text--gray-700   {color: var(--gray-700);}
+.text--gray-900   {color: var(--gray-900);}
+
+.text--purple-300 {color: var(--purple-300);}
+.text--purple-500 {color: var(--purple-500);}
+.text--purple-700 {color: var(--purple-700);}
+
+.text--indigo-300 {color: var(--indigo-300);}
+.text--indigo-500 {color: var(--indigo-500);}
+.text--indigo-700 {color: var(--indigo-700);}
+
+.bg--white        {background-color: var(--white);}
+
+.bg--gray-300     {background-color: var(--gray-300);}
+.bg--gray-500     {background-color: var(--gray-500);}
+.bg--gray-700     {background-color: var(--gray-700);}
+.bg--gray-900     {background-color: var(--gray-900);}
+
+.bg--purple-300   {background-color: var(--purple-300);}
+.bg--purple-500   {background-color: var(--purple-500);}
+.bg--purple-700   {background-color: var(--purple-700);}
+
+.bg--indigo-300   {background-color: var(--indigo-300);}
+.bg--indigo-500   {background-color: var(--indigo-500);}
+.bg--indigo-700   {background-color: var(--indigo-700);}
+
+.border--white    {border-color: rgba(255, 255, 255, var(--tw-border-opacity));}
+
+.border--gray-300 {border-color: rgba(209, 213, 219, var(--tw-border-opacity));}
+.border--gray-500 {border-color: rgba(107, 114, 128, var(--tw-border-opacity));}
+.border--gray-700 {border-color: rgba(55, 65, 81, var(--tw-border-opacity));}
+.border--gray-900 {border-color: rgba(17, 24, 39, var(--tw-border-opacity));}

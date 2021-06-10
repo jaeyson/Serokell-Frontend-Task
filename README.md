@@ -2,19 +2,18 @@
 
 ## Main file
 
-- install deps (`npm i`) then `npm run start` (see `package.json` "scripts")
+- install deps (`npm i`) then `npm start` (see `package.json` "scripts")
 - or view it [here](https://jaeyson.github.io/Serokell-Frontend-Task)
 
 ## File Structure
 
 ```
 root_dir/
-├── src/
-│   ├── index.js
-│   ├── style.scss
-│   └── reset.scss
-├── index.html
 ├── output/
+│   ├── index.html
+│   ├── main.js
+│   └── main.css
+├── src/
 └── ...rest of the files
 ```
 
