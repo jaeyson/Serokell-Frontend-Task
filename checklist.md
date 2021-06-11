@@ -9,30 +9,29 @@
 
 ```
 root_dir/
-├── docs/
-│   ├── index.html
-│   ├── main.js
-│   └── main.css
+├── index.html
+├── main.js
+├── main.css
 ├── src/
 └── ...rest of the files
 ```
 
 ## Checklist before sending
 
-- [ ] File structure:
+- [x] File structure:
   * HTML file with layout
   * Script file (JavaScript/TypeScript)
   * Styles file (CSS/SCSS)
-- [ ] No external libraries used (jQuery, Bootstrap, etc.)
-- [ ] BEM methodology is used for the naming of class elements (`block__element-modifier`)
-- [ ] Code is formatted according to the [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
-- [ ] Page looks good on mobile devices
-- [ ] Page looks similar in main browsers (Chrome, Firefox[, Safari])
-- [ ] Content on page is limited by maximum width but backgrounds of sections are full width
-- [ ] Header is always on the top of the page while scrolling
-- [ ] Header has hamburger menu on mobile devices
-- [ ] Title section is browser window high with responsive full size background image
-- [ ] Contact us button in title section scrolls to contact section
-- [ ] Main section has two rows with one image and text each on desktop
-- [ ] Main section has all block one under another on mobile
-- [ ] Contact section has form that on submit prints all entered data into browser console
+- [x] No external libraries used (jQuery, Bootstrap, etc.)
+- [x] BEM methodology is used for the naming of class elements (`block__element-modifier`)
+- [x] Code is formatted according to the [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+- [x] Page looks good on mobile devices
+- [x] Page looks similar in main browsers (Chrome, Firefox[, Safari])
+- [x] Content on page is limited by maximum width but backgrounds of sections are full width
+- [x] Header is always on the top of the page while scrolling
+- [x] Header has hamburger menu on mobile devices
+- [x] Title section is browser window high with responsive full size background image
+- [x] Contact us button in title section scrolls to contact section
+- [x] Main section has two rows with one image and text each on desktop
+- [x] Main section has all block one under another on mobile
+- [x] Contact section has form that on submit prints all entered data into browser console
